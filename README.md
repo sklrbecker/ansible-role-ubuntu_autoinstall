@@ -20,7 +20,7 @@
 ```
 
 ### Variables
-* **boot_drive_serial** – the serial number of the drive where you want to install Ubuntu. You can find it out using `ls /dev/disk/by-id`. Make sure to omit the interface (e.g. **ata-** or **scsi-**).
+* **boot_drive_serial** – the serial number of the drive where you want to install Ubuntu. You can find it out using `udevadm info [DEVPATH]`. You are looking for the ID_SERIAL.
 * **iso_arch** – Architecture of the output ISO file. `amd64` and `arm64` are supported
 
 
